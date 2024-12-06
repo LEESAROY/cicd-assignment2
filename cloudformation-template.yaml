@@ -38,7 +38,7 @@ Resources:
             };
             return response;
           };
-      Runtime: 'nodejs14.x'
+      Runtime: 'nodejs22.x'
       Environment:
         Variables:
           S3_BUCKET_NAME: !Ref MyS3Bucket
