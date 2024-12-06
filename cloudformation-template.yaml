@@ -3,7 +3,7 @@ Resources:
   MyS3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: 'my-s3-bucket-example-1'
+      BucketName: 'my-s3-bucket-example-2'
       AccessControl: 'Private'
       VersioningConfiguration:
         Status: 'Enabled'
@@ -11,7 +11,7 @@ Resources:
   MyDynamoDBTable:
     Type: 'AWS::DynamoDB::Table'
     Properties:
-      TableName: 'my-dynamodb-table-1'
+      TableName: 'my-dynamodb-table-2'
       AttributeDefinitions:
         - AttributeName: 'id'
           AttributeType: 'S'
@@ -25,7 +25,7 @@ Resources:
   MyLambdaFunction:
     Type: 'AWS::Lambda::Function'
     Properties:
-      FunctionName: 'my-lambda-function-1'
+      FunctionName: 'my-lambda-function-2'
       Handler: 'index.handler'
       Role: !GetAtt MyLambdaExecutionRole.Arn
       Code:
